@@ -1,7 +1,6 @@
 Causal inference to investigate french electricity market
 ==============================
 
-structural causal model of nuclear availebility in France
 
 Main notebooks are 01-get_data_nuc.ipynb for data acquisition, 
 04-evaluate_scm.ipynb for creation, fit and evaluation of structured causal model via DoWhy 
