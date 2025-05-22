@@ -1,3 +1,28 @@
+# This file includes code adapted from the PyWhy project (https://github.com/py-why)
+# Licensed under the MIT License:
+# 
+# MIT License
+
+#     Copyright (c) PyWhy contributors. All rights reserved.
+
+#     Permission is hereby granted, free of charge, to any person obtaining a copy
+#     of this software and associated documentation files (the "Software"), to deal
+#     in the Software without restriction, including without limitation the rights
+#     to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+#     copies of the Software, and to permit persons to whom the Software is
+#     furnished to do so, subject to the following conditions:
+
+#     The above copyright notice and this permission notice shall be included in all
+#     copies or substantial portions of the Software.
+
+#     THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+#     IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+#     FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+#     AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+#     LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+#     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+#     SOFTWARE
+
 import matplotlib.pyplot as plt
 import matplotlib.colors as mcolors
 
@@ -29,6 +54,7 @@ def plot_evaluation_results_custom(
     Plot a custom flasification histogram.
     adapted from: from dowhy.gcm.falsify import plot_evaluation_results
     https://github.com/py-why/dowhy/blob/main/dowhy/gcm/falsify.py
+    
     Parameters:
     evaluation_result (dowhy.gcm.falsify.FalsificationResult): The evaluation result to plot, containing the summary of falsification tests.
     ax (matplotlib.axes.Axes): The axes on which to plot the histogram.
