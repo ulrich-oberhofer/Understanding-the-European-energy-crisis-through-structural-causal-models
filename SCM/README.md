@@ -70,7 +70,7 @@ Secondly some data needs to be downloaded manually.
 After that the rest of 01-get_data_nuc.ipynb can be executed. Execution times may vary with internet connection.
 For reference in our case a complete runthrough takes 3-4h (with nuclear availability taking the longest: 2h).
 
-After that all necessary data is provided.
+After that all necessary data is provided. The data relevant for the SCM can then be found in "data_selected_FR_2018_2023.csv" in the combined data folder. The time series data is denoted in coordinated universal time (UTC) and has an hourly resolution. In the case where only daily or yearly resolution is available, every hour of the corresponding day or year (in UTC) is set to the given value.
 
 The notebook 04-evaluate_scm.ipynb can be used for creation, fit and evaluation of structured causal model via DoWhy. 
 Here the option with_falsification = TRUE, allows for a more precise falsification of the model, while the standard evaluation 
