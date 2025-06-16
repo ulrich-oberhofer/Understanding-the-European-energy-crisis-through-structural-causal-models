@@ -61,7 +61,11 @@ def plot_dependency(name1, name2, cf, fg_values, color=True, save=False, file_na
                 else: 
                     plt.xlabel(x_label)
                 if y_label == '':
-                    plt.ylabel('Shapley flow value')
+                    if target == 'price':
+                        y_unit = 'EUR/MWh'
+                    elif target == 'export':
+                        y_unit = 'MW'
+                    plt.ylabel('Shapley flow value (' + y_unit + ')')
                 else:
                     plt.ylabel(y_label)
                 
