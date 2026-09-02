@@ -139,7 +139,7 @@ class Graph:
         assert check_child_args_consistency(self), "child parent not consistent"
         assert check_DAG(self), "not a dag anymore"
 
-    def build_feature_graph(self, X, method='xgboost'):
+    def fit_missing_links(self, X, method='xgboost'):
         '''
         X is assumed to be a dataframe
 
